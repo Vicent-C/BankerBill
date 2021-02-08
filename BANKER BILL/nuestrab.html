@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vicent Calderón Gómez">
+    <meta name="description" content="Banker Bill, un banco de confianza">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!--ICONO EN VENTANA DEL NAVEGADOR-->
+    <link  rel="icon" href="img/FAVICON.ico" type="image/ico"/>
+    <style type="text/css">
+      .ocultar {
+          display: none;
+      }
+
+      .mostrar {
+          display: block;
+      }
+      body{
+        font-family: 'Courier New', monospace;
+      }
+      /*Card giratoria */
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+    </style>
+    <script>
+      
+    </script>
+    <title>Banker Bill</title>
+</head>
+<body>
+    <header class="row col-12">
+      
+    </header>
+<!--Barra de navegación-->
+<nav class="navbar navbar-expand-lg navbar-light bg-success" style=" border-radius: 5px;">
+  <div class="container-fluid">
+    <button class="navbar-toggler btn-outline-success border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fas fa-bars text-light"></span>
+    </button>
+    <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+      <a class="navbar-brand text-light" href="index.html"><i class="fas fa-home"></i></a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 class-10 text-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="qsomos.html">¿Quiénes Somos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="qsomos.html#equipo">Equipo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="productos.html">Productos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Planes
+          </a>
+          <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item text-success" href="index.html#planfamiliar" role="button">Plan Familiar</a></li>
+            <li><a class="dropdown-item text-success" href="index.html#planpension">Plan de Pensiones</a></li>
+            <li><hr class="dropdown-divider text-success"></li>
+            <li><a class="dropdown-item text-success" href="index.html#fondosinversion">Fondos de Inversión</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-light" href="nuestrab.html">Nuestros Trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="index.html#FAQ">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="form.html">Acceder</a>
+        </li>
+      </ul>
+      
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light col-sm-4" type="submit">Search</i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Fin navegación-->
+
+<!--Breadcrum-->
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="text-success">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Nuestos trabajos</li>
+        </ol>
+    </nav>
+
+    <main class="col-md-12 justify-content-center" style="min-height: 100vh; display: flex; flex-direction: column;" >
+        <section class="justify-content-center col-md-12" style="flex: 1; padding-bottom:100px;">
+         
+            
+        <!--Cards Giratorias-->
+          <article class=" col-sm-12 mt-3 justify-content-center">
+            
+                    <!--Card Nº1-->
+                    <div class="col-md-5 my-3 justify-content-center" style="height: 300px;">
+                       <div class="card card-flip h-100">
+                           <div class="card-front text-white bg-dark">
+                               <div class="card-body text-light" style="background-image: url('img/pago_movil.jpg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                                   <i class="far fa-credit-card fa-4x"></i>
+                                   <h3 class="card-title"><b>Pago sin tarjeta</b></h3>
+                                   <p class="card-text"><b>Paga con tu móvil desde nuestra app de banca</b></p>
+                               </div>
+                           </div>
+                           <div class="card-back bg-white">
+                               <div class="card-body text-success">
+                                   <h3 class="card-title">Bizum</h3>
+                                   <p class="card-text">Nos hemos actualizado, y ahora puedes pagar con el móvil, de forma fácil y sencilla.</p>
+                                   <a href="https://bizum.es/" class="btn btn-outline-success">Saber Más <i class="fas fa-plus"></i></a>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                  </div>
+                    <!--Card Nº2-->
+                  
+                    <div class="col-md-5 my-3 justify-content-center" style="height: 300px;">
+                        <div class="card card-flip h-100">
+                            <div class="card-front text-white bg-warning">
+                                <div class="card-body" style="background-image: url('img/seguros1.jpg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                                    
+                                    <i class="fas fa-hand-holding-usd fa-5x"></i>
+                                    <h3 class="card-title">Seguros</h3>
+                                    <p class="card-text">Aquí encontrarás los seguros perfectos para tu hogar, vehículo y de vida. Contrata uno y vive seguro.</p>
+                                </div>
+                            </div>
+                            <div class="card-back bg-light text-success">
+                                <div class="card-body">
+                                    <h3 class="card-title">Mejores seguros</h3>
+                                    <p class="card-text">Estos son los seguros que mejor se adaptan a nuestros clientes.</p>
+                                    <a href="productos.html" class="btn btn-outline-success">Contratar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <!--Card Nº3-->
+                  
+                    <div class="col-md-5 my-3" style="height: 300px;">
+                        <div class="card card-flip h-100">
+                            <div class="card-front text-success">
+                                <div class="card-body" style="background-image: url('img/Logotipo1_ICONO.png'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                                  <i class="fas fa-sign-in-alt fa-5x"></i>
+                                    <h3 class="card-title"><b>Accede a tu cuenta desde aquí</b></h3>
+                                    <p class="card-text"><b>¡Accede desde tu dispositivo móvil o desde cualquier dispositivo!</b></p>
+                                </div>
+                            </div>
+                            <div class="card-back bg-white">
+                                <div class="card-body text-success">
+                                    <h3 class="card-title">Tu cuenta</h3>
+                                    <p class="card-text">Accede a tu cuenta desde aquí, estamos esperándote</p>
+                                    <a href="form.html#LogIn" class="btn btn-outline-success">Acceder</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Nº4-->
+                   
+                    <div class="col-md-5 my-3" style="height: 300px;">
+                        <div class="card card-flip h-100">
+                            <div class="card-front" style="background-image: url('img/en-que-deberias-invertir.jpeg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                                <div class="card-body text-primary">
+                                    <i class="far fa-chart-bar fa-5x float-right"></i>
+                                    <h3 class="card-title"><b>Controla tus acciones</b></h3>
+                                    <p class="card-text"><b>Puedes controlar tus acciones desde el sillón de casa usando el móvil.</b></p>
+                                </div>
+                            </div>
+                            <div class="card-back bg-white">
+                                <div class="card-body text-success">
+                                    <h3 class="card-title">¡Lo sentimos!</h3>
+                                    <p class="card-text">Esta opción aún no está disponible</p>
+                                    <a href="#" class="btn btn-outline-success"><i class="fas fa-ban"></i> No disponible</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                  
+                  
+                </div>
+            </div>
+
+          </article>
+
+        </section>
+        <!--Paginación-->
+         <div aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link text-success" href="index.html" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-success" href="index.html">1</a></li>
+              <li class="page-item"><a class="page-link text-success" href="nuestrab.html">2</a></li>
+              <li class="page-item"><a class="page-link text-success" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+              </li>
+            </ul>
+          </div>
+    </main>  
+    <footer class=" col-12 bg-success p-2 justify-content-center rounded-top" style="height:100px;bottom:none;">
+      <div class="col-md-12 row justify-content-left">
+        <div class="col-md-4 text-light">
+          <a href="form.html#LogIn" class="text-light text-decoration-none">Mi Cuenta</a></i><br/>
+          <a href="form.html#SignIn" class="text-light text-decoration-none">Registrarme</a><br/>
+          
+          
+          <!-- Enlace para abrir el modal -->
+          
+        </div>
+        <div class="">
+          <a href="" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Aviso Legal
+          </a>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Aviso Legal y Condiciones de Uso</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="avisoleg.html" width="100%" height="100%" scrolling=""></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       
+    </footer>
+
+    <script>
+
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a642229d8d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+DOMINIOS BANKER BILL:
+
+Tonohost
+-bankerbill.tonohost.com
+
+Freenom
+-bankerbill.ml

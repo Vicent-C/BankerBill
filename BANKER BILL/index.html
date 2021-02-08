@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vicent Calderón Gómez">
+    <meta name="description" content="Banker Bill, un banco de confianza">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+  
+    <!--ICONO EN VENTANA DEL NAVEGADOR-->
+    <link  rel="icon" href="img/FAVICON.ico" type="image/ico"/>
+    <style>
+      body{
+        font-family: 'Courier New', monospace;
+      }
+      
+
+
+
+    </style>
+    <script>
+
+    </script>
+    
+    <title>Banker Bill</title>
+</head>
+<body>
+ 
+    <header class="col-12">
+      <!--Carousel-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="index.html#planfamiliar"><img src="img/Header_1.png" class="d-block w-100" alt="..." style="filter: blur(1px); border-radius: 5px;"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h2><b>Para ti y tu familia</b></h2>
+              <p><b>Para disfrutar mejor el tiempo con tu familia.</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Header_2.png" class="d-block w-100" alt="..." style="filter: blur(1px); border-radius: 5px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Para viajar</b></h2>
+              <p><b>Disfruta ahora de tus viajes sin tener preocupaciones</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/Header_3.png" class="d-block w-100" alt="..." style="filter: blur(1px); border-radius: 5px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h2><b>Mejores inversiones</b></h2>
+              <p><b>Invierte en tu futuro con el mejor banco.</b></p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+      <!--Fin de carousel-->
+    </header>
+
+
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success " style=" border-radius: 5px;">
+      <div class="container-fluid">
+        <button class="navbar-toggler btn-outline-success border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-bars text-light"></span>
+        </button>
+        <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+          <a class="navbar-brand text-light" href="index.html"><i class="fas fa-home"></i></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 class-10 text-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="qsomos.html">¿Quiénes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="qsomos.html#equipo">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Planes
+              </a>
+              <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-success" href="index.html#planfamiliar" role="button">Plan Familiar</a></li>
+                <li><a class="dropdown-item text-success" href="index.html#planpension">Plan de Pensiones</a></li>
+                <li><hr class="dropdown-divider text-success"></li>
+                <li><a class="dropdown-item text-success" href="index.html#fondosinversion">Fondos de Inversión</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link text-light" href="nuestrab.html">Nuestros Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html#FAQ">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="form.html">Acceder</a>
+            </li>
+          </ul>
+          
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light col-sm-4" type="submit">Search</i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Fin navegación-->
+    
+
+    <main class="col-md-12 justify-content-center">
+        <section class="justify-content-center col-md-12">
+          <!--Second banner-->
+          <article class="row col-sm-12">
+            <div class="col-sm-12 bg-transparent text-center my-3">
+              <h1 class="text-success text-center" style="font-family: 'Courier New', monospace;"><img src="img/FAVICON.ico" class="img-fluid" width="10%"><a type="button" data-placement="bottom" data-toggle="popover" title="Epic Popover" data-content="And here's some amazing content. It's very engaging. Right?">Bienvenido a BankerBill</a><img src="img/FAVICON.ico" class="img-fluid" width="10%"></h1>
+            </div>
+          <!--Fin second banner-->
+              <div class="col-md-6 bg-success" style="height: 450px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;;">
+                <div class="m-5 text-center">
+                  <h1 class="text-light display-3"><b>Tu cuenta Banker Bill con IBAN español</b></h1>
+                  <p class="text-light">Somos un banco 100% digital, seguro y con licencia bancaria. Tus depósitos están protegidos hasta 100 000 € por el Fondo de Garantía de Depósitos Bancarios.</p>
+                </div>
+              </div>
+              <div class="col-sm-6" style="height: 450px; text-align:right;">
+               
+                  <video autoplay loop muted playsinline src="video/vid_cuenta_info.mp4" height="450px" type="video/mp4" class="text-right" style="margin-right: auto;">Su navegador no admite video HTML5.</video>
+  
+              </div>
+            
+          </article>
+
+          <!--Código QR-->
+          <article class="row col-sm-12 mt-3" style="text-align: right;">
+            <div class="col-sm-6" style="height: 450px; text-align:center;">
+              <!--Tooltip-->
+              <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="right" title="Escanéame">
+              <img src="img/frame.png" height="450px">
+            </button>
+            </div>
+            <div class="col-sm-6 bg-success text-center" style="height: 450px; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+              <div class="m-5">
+                <h1 class="text-light display-3"><b>Accede desde tu móvil</b></h1>
+                <p class="text-light">Escanea este fantástico código QR, accede desde tu dispositivo móvil y simplemente disfruta de la experiencia</p>
+              </div>
+            </div>
+            
+          </article>
+
+          <!--Fin de código QR-->
+         
+
+          <!--Inversión-->
+          <article class="row col-sm-12 mt-3 align-items-center">
+            <div class="row col--12 justify-content-center">
+              <!--Plan Jóven-->
+              <div class="card border-success m-3 col-md-4" style="width: 22rem;" id="planfamiliar">
+                <img src="img/familia.jpg" class="card-img-top" alt="Plan Jóven">
+                <div class="card-body text-success text-justify">
+                  <h5 class="card-title"><b>Plan Familiar</b></h5>
+                  <p class="card-text">Banker Bill en familia: un servicio exclusivo de los grandes patrimonios, ahora, al alcance de tu familia. </p>
+                  <a href="#" class="btn btn-success">Saber Más <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+              <!--Plan Pensiones-->
+              <div class="card border-success m-3 col-md-4" style="width: 22rem;" id="planpension">
+                <img src="img/que-es-fondo-inversion.jpg" class="card-img-top" alt="Plan de Pensiones">
+                <div class="card-body text-success">
+                  <h5 class="card-title"><b>Plan de Pensiones</b></h5>
+                  <p class="card-text">La edad ha dejado de ser algo que os define. Crea un mejor futuro para tu economía con Banker Bill</p>
+                  <a href="#" class="btn btn-success">Saber Más <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+
+              <!--Fondos de inversiones-->
+              <div class="card border-success m-3 col-md-4" style="width: 22rem;" id="fondosinversion">
+                <img src="img/fondosinvers.jpg" class="card-img-top" alt="Fondos de inversiones">
+                <div class="card-body text-success">
+                  <h5 class="card-title"><b>Fondos de Inversión</b></h5>
+                  <p class="card-text">Gestión integral de patrimonios: te ofrecemos las mejores recomendaciones, pero las decisiones las tomas tú.</p>
+                  <a href="#" class="btn btn-success">Saber Más <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+          </article>
+
+          <!--FAQ-->
+          <article class="row col-sm-12 justify-content-center mt-5" id="FAQ">
+            <div class="col-sm-9">
+              <div class="accordion text-success" id="accordionExample">
+                <!--ITEM 1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      ¿Quién puede abrir una cuenta en BankerBill?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-dark">
+                      <p><i class="fas fa-check-circle text-success"></i> Tener 18 años o más</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Ser persona residente en España, persona con nacionalidad Española, estadounidense o canadiense.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> ¿Y qué documentación necesito?</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Sólo necesitas tu documento de identidad</p>
+                    </div>
+                  </div>
+                </div>
+                <!--ITEM 2-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      ¿Qué ventajas aporta tener una cuenta BankerBill_On?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-dark">
+                      <p><i class="fas fa-check-circle text-success"></i> Mantenimiento y administración de la cuenta.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Por retirar efectivo a débito en más de 5.000 cajeros. Totalmente gratis en cajeros BankerBill y hasta cuatro veces al mes por cliente en Euro6000 (1) y Banco Sabadell.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Transferencias ordinarias en euros desde BankerBill Online y la app de BankerBill.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Ingresos de cheques en euros.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Tarjeta BankerBill gratis.</p>
+                      <p>Más servicios y ventajas</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Tarjeta Crédito_ON Nómina, en caso de tener los ingresos domiciliados (nómina o pensión por importe igual o mayor a 1.000€), sin coste de alta ni mantenimiento, para poder hacer tus compras.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Bizum: servicio gratuito de BankerBill para enviar y recibir dinero directamente en tu cuenta a través de tu número de móvil.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Acceso a BankerBill Online y la app de BankerBill para que gestiones tu cuenta cuando y donde quieras.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Gestión gratuita de cambio de domiciliación de recibos en tu cuenta</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!--ITEM 3-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed text-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      ¿Cómo me beneficio de estas ventajas?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-dark">
+                      <p>Para no pagar comisiones por tu BankerBill_On ni tu Tarjeta Débito_ON, es imprescindible cumplir las siguientes condiciones del perfil digital:</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Ser mayor de 18 años.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Informarnos de tu móvil y tu email para recibir comunicaciones comerciales por ambos canales. Toda nuestra correspondencia será sin papel, así cuidamos el medio ambiente.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Todos los titulares deben tener instalada la App BankerBill.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> Todos los titulares deben haber aceptado y activado la mensajeria PUSH a través de la App BankerBill.</p>
+                      <p><i class="fas fa-check-circle text-success"></i> La gestión de tu cuenta debe ser 100 % online (BankerBill Online, App, cajeros)</p>
+                      <p>¿Qué ocurre si no cumplo las con condiciones?</p>
+                      <p><i class="fas fa-check-circle text-success"></i> La comisión de Mantenimiento de la cuenta es gratuito, siempre y cuando el titular de la misma cumpla las condiciones del perfil digital. En caso de que el titular de la tarjeta no cumpla condiciones, pero tenga ingresos domiciliados, la comisión de emisión y mantenimiento de la tarjeta de débito es de 14 €/año. En caso de que el titular de la tarjeta no cumpla condiciones y no tenga ingresos domiciliados, la emisión y mantenimiento de la tarjeta de débito es de 28 €/año.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </article>
+          
+        </section>
+          <!--Paginación-->
+          <div aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link text-success" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-success" href="index.html">1</a></li>
+              <li class="page-item"><a class="page-link text-success" href="nuestrab.html">2</a></li>
+              <li class="page-item"><a class="page-link text-success" href="nuestrab.html" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+              </li>
+            </ul>
+          </div>
+          
+    </main>
+    <footer class=" col-12 bg-success p-2 justify-content-center rounded-top" style="height:100px;bottom:none;">
+      <div class="col-md-12 row justify-content-left">
+        <div class="col-md-4 text-light">
+          <a href="form.html#LogIn" class="text-light text-decoration-none">Mi Cuenta</a></i><br/>
+          <a href="form.html#SignIn" class="text-light text-decoration-none">Registrarme</a><br/>
+          
+          
+          <!-- Enlace para abrir el modal -->
+          
+        </div>
+        <div class="">
+          <a href="" class="text-decoration-none text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Aviso Legal
+          </a>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Aviso Legal y Condiciones de Uso</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="avisoleg.html" width="100%" height="100%" scrolling=""></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+       
+    </footer>
+    <script>            
+    </script>
+    <!--Popover scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a642229d8d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</body>
+</html>
