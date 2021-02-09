@@ -6,52 +6,9 @@
     <meta name="author" content="Vicent Calderón Gómez">
     <meta name="description" content="Banker Bill, un banco de confianza">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="css/estilos1.css" type="text/css">
     <!--ICONO EN VENTANA DEL NAVEGADOR-->
     <link  rel="icon" href="img/FAVICON.ico" type="image/ico"/>
-    <style type="text/css">
-      .ocultar {
-          display: none;
-      }
-
-      .mostrar {
-          display: block;
-      }
-      body{
-        font-family: 'Courier New', monospace;
-      }
-      /*Card giratoria */
-.card-flip > div {
-  backface-visibility: hidden;
-  transition: transform 300ms;
-  transition-timing-function: linear;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  display: flex;
-}
-
-.card-front {
-  transform: rotateY(0deg);
-}
-
-.card-back {
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
-}
-
-.card-flip:hover .card-front {
-  transform: rotateY(-180deg);
-}
-  
-.card-flip:hover .card-back {
-  transform: rotateY(0deg);
-}
-    </style>
-    <script>
-      
-    </script>
     <title>Banker Bill</title>
 </head>
 <body>
@@ -59,7 +16,7 @@
       
     </header>
 <!--Barra de navegación-->
-<nav class="navbar navbar-expand-lg navbar-light bg-success" style=" border-radius: 5px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-success rounded">
   <div class="container-fluid">
     <button class="navbar-toggler btn-outline-success border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fas fa-bars text-light"></span>
@@ -116,25 +73,25 @@
 <!--Fin navegación-->
 
 <!--Breadcrum-->
-    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html" class="text-success">Inicio</a></li>
         <li class="breadcrumb-item active" aria-current="page">Nuestos trabajos</li>
         </ol>
     </nav>
 
-    <main class="col-md-12 justify-content-center" style="min-height: 100vh; display: flex; flex-direction: column;" >
-        <section class="justify-content-center col-md-12" style="flex: 1; padding-bottom:100px;">
+    <main class="col-md-12 justify-content-center">
+        <section class="col-md-12 ">
          
             
         <!--Cards Giratorias-->
-          <article class=" row col-sm-12 mt-3 justify-content-center">
+          <article class=" row col-md-12 mt-3 justify-content-center">
             
                     <!--Card Nº1-->
                     <div class="col-md-5 my-3 justify-content-center" style="height: 300px;">
                        <div class="card card-flip h-100">
                            <div class="card-front text-white bg-dark">
-                               <div class="card-body text-light" style="background-image: url('img/pago_movil.jpg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                               <div id="divimg1" class="card-body text-light" style="background-image: url('img/pago_movil.jpg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
                                    <i class="far fa-credit-card fa-4x"></i>
                                    <h3 class="card-title"><b>Pago sin tarjeta</b></h3>
                                    <p class="card-text"><b>Paga con tu móvil desde nuestra app de banca</b></p>
@@ -155,7 +112,7 @@
                     <div class="col-md-5 my-3 justify-content-center" style="height: 300px;">
                         <div class="card card-flip h-100">
                             <div class="card-front text-white bg-warning">
-                                <div class="card-body" style="background-image: url('img/seguros1.jpg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                                <div id="divimg2" class="card-body" style="background-image: url('img/seguros1.jpg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
                                     
                                     <i class="fas fa-hand-holding-usd fa-5x"></i>
                                     <h3 class="card-title">Seguros</h3>
@@ -177,7 +134,7 @@
                     <div class="col-md-5 my-3" style="height: 300px;">
                         <div class="card card-flip h-100">
                             <div class="card-front text-success">
-                                <div class="card-body" style="background-image: url('img/Logotipo1_ICONO.png'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                                <div id="divimg3" class="card-body" style="background-image: url('img/Logotipo1_ICONO.png'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
                                   <i class="fas fa-sign-in-alt fa-5x"></i>
                                     <h3 class="card-title"><b>Accede a tu cuenta desde aquí</b></h3>
                                     <p class="card-text"><b>¡Accede desde tu dispositivo móvil o desde cualquier dispositivo!</b></p>
@@ -197,7 +154,7 @@
                    
                     <div class="col-md-5 my-3" style="height: 300px;">
                         <div class="card card-flip h-100">
-                            <div class="card-front" style="background-image: url('img/en-que-deberias-invertir.jpeg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
+                            <div id="divimg4" class="card-front" style="background-image: url('img/en-que-deberias-invertir.jpeg'); background-repeat: no-repeat; background-size: cover;background-position-y: center;">
                                 <div class="card-body text-primary">
                                     <i class="far fa-chart-bar fa-5x float-right"></i>
                                     <h3 class="card-title"><b>Controla tus acciones</b></h3>
@@ -237,7 +194,7 @@
             </ul>
           </div>
     </main>  
-    <footer class=" col-12 bg-success p-2 justify-content-center rounded-top" style="height:100px;bottom:none;">
+    <footer class=" col-12 bg-success p-2 justify-content-center rounded-top">
       <div class="col-md-12 row justify-content-left">
         <div class="col-md-4 text-light">
           <a href="form.html#LogIn" class="text-light text-decoration-none">Mi Cuenta</a></i><br/>

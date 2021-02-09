@@ -9,21 +9,8 @@
     
     <!--ICONO EN VENTANA DEL NAVEGADOR-->
     <link  rel="icon" href="img/FAVICON.ico" type="image/ico"/>
-    <style type="text/css">
-      .ocultar {
-          display: none;
-      }
-
-      .mostrar {
-          display: block;
-      }
-      body{
-        font-family: 'Courier New', monospace;
-      }
-    </style>
-    <script>
-      
-    </script>
+    <link rel="stylesheet" href="css/estilos1.css" type="text/css">
+    
     <title>Banker Bill</title>
 </head>
 <body >
@@ -31,7 +18,7 @@
       
     </header>
     <!--Barra de navegación-->
-<nav class="navbar navbar-expand-lg navbar-light bg-success" style=" border-radius: 5px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-success rounded">
   <div class="container-fluid">
     <button class="navbar-toggler btn-outline-success border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fas fa-bars text-light"></span>
@@ -89,14 +76,14 @@
 
       <!--Breadcrumb-->
       
-      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+      <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html" class="text-success">Inicio</a></li>
           <li class="breadcrumb-item active" aria-current="page">Unirse</li>
         </ol>
       </nav>
 
-    <main class="col-12" style="min-height: 100vh; display: flex; flex-direction: column;">
+    <main class="col-12 flex-column">
         <section class="col-12">
             <!--Dynamic Tab-->
 
@@ -111,7 +98,7 @@
               </ul>
 
               <!--LOGEARSE-->
-              <div class="tab-content p-2 bg-light border col-12" id="myTabContent" style="flex: 1; padding-bottom:100px;">
+              <div class="tab-content p-2 bg-light border col-12 d-flex" id="myTabContent">
                 <div class="tab-pane fade show active" id="LogIn" role="tabpanel" aria-labelledby="LogIn">
                   <form class="row justify-content-center">
                     <div class="row col-12 justify-content-center">
@@ -156,7 +143,7 @@
 
                 <!--REGISTRO-->
                 
-                  <div class="tab-pane fade col-md-12" id="SignIn" role="tabpanel" aria-labelledby="SignIn" style="flex: 1; padding-bottom:100px;">
+                  <div class="tab-pane fade col-md-12" id="SignIn" role="tabpanel" aria-labelledby="SignIn">
                     <form class="row needs-validation" novalidate  id="miformulario" onsubmit="verificarPasswords(); return false">
                       <div class="row col-md-12 justify-content-center mb-3">
                         <div class="col-md-4">
@@ -263,7 +250,7 @@
         </section>
     </main>
      
-    <footer class=" col-12 bg-success p-2 justify-content-center rounded-top" style="height:100px;bottom:none;">
+    <footer class=" col-12 bg-success p-2 justify-content-center rounded-top h-100" >
       <div class="col-md-12 row justify-content-left">
         <div class="col-md-4 text-light">
           <a href="form.html#LogIn" class="text-light text-decoration-none">Mi Cuenta</a></i><br/>

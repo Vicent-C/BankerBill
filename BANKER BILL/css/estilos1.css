@@ -1,0 +1,55 @@
+body{
+    min-height: 100vh;
+    font-family: 'Courier New', monospace;
+}
+main{
+    padding-bottom:0px;
+    min-height: 100vh;
+    
+}
+footer{
+    height:100px;
+    bottom:0;
+}
+section{
+    width: 100vw;
+    
+}
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+body{
+  font-family: 'Courier New', monospace;
+}
+/*Card giratoria */
+.card-flip > div {
+backface-visibility: hidden;
+transition: transform 300ms;
+transition-timing-function: linear;
+width: 100%;
+height: 100%;
+margin: 0;
+display: flex;
+}
+
+.card-front {
+transform: rotateY(0deg);
+}
+
+.card-back {
+transform: rotateY(180deg);
+position: absolute;
+top: 0;
+}
+
+.card-flip:hover .card-front {
+transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+transform: rotateY(0deg);
+}
